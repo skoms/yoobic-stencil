@@ -12,6 +12,7 @@ export interface Sort {
 })
 export class YoobicGrid {
   @Prop({ mutable: true }) data: object[] = [];
+  @Prop() sortIconHexColor: string = 'FFFFFF';
 
   @State() sort: Sort = {
     column: 'id',
@@ -115,9 +116,9 @@ export class YoobicGrid {
   private getSortImg = (column: string) => {
     return this.sort.column === column ? (
       this.sort.order === 'ASC' ? (
-        <img src="https://img.icons8.com/material-outlined/20/FFFFFF/up-squared.png" alt="sort arrow" />
+        <img src={`https://img.icons8.com/material-outlined/20/${this.sortIconHexColor}/up-squared.png`} alt="sort arrow" />
       ) : (
-        <img src="https://img.icons8.com/material-outlined/20/FFFFFF/down-squared.png" alt="sort arrow" />
+        <img src={`https://img.icons8.com/material-outlined/20/${this.sortIconHexColor}/down-squared.png`} alt="sort arrow" />
       )
     ) : (
       ''

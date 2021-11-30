@@ -1,11 +1,11 @@
 :host {
   display: block;
   margin: 0.5rem;
-  border: rgba(0, 0, 0, 0.301) 2px solid;
-  box-shadow: rgba(0, 0, 0, 0.3) -2px -2px 4px;
+  border: var(--grid-container-border, rgba(0, 0, 0, 0.3) 2px solid);
+  box-shadow: var(--grid-container-box-shadow, rgba(0, 0, 0, 0.3) -2px -2px 4px);
   border-radius: 20px;
   width: fit-content;
-  background: white;
+  background: var(--grid-container-background-color, #fff);
 }
 
 th,
@@ -49,9 +49,9 @@ table {
 }
 
 thead {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--grid-header-background-color, rgba(0, 0, 0, 0.8));
   font-weight: 900;
-  color: white;
+  color: var(--grid-header-color, #fff);
 }
 
 tbody {
@@ -59,12 +59,13 @@ tbody {
 }
 
 tbody tr:nth-child(2n + 1) {
-  background-color: rgba(0, 255, 85, 0.4);
+  background-color: var(--grid-even-row-background-color, rgba(0, 255, 85, 0.4));
+  color: var(--grid-even-row-color, #000);
 }
 
 tbody tr:nth-child(2n + 2) {
-  background-color: rgba(0, 90, 5, 0.7);
-  color: white;
+  background-color: var(--grid-odd-row-background-color, rgba(0, 90, 5, 0.7));
+  color: var(--grid-odd-row-color, #fff);
 }
 
 td {

@@ -13,3 +13,23 @@ body {
   padding: 0px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
+
+/* CSS Variables */
+:root {
+  /* Container */
+  --grid-container-background-color: #fff;
+  --grid-container-border: rgba(0, 0, 0, 0.3) 2px solid;
+  --grid-container-box-shadow: rgba(0, 0, 0, 0.3) -2px -2px 4px;
+
+  /* Container */
+  --grid-header-color: #fff;
+  --grid-header-background-color: rgba(0, 0, 0, 0.8);
+
+  /* Even Row Colors */
+  --grid-even-row-background-color: rgba(0, 255, 85, 0.4);
+  --grid-even-row-color: #000;
+
+  /* Odd Row Colors */
+  --grid-odd-row-background-color: rgba(0, 90, 5, 0.7);
+  --grid-odd-row-color: #fff;
+}

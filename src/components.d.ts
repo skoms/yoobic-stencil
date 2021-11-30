@@ -10,6 +10,7 @@ export namespace Components {
     }
     interface YoobicGrid {
         "data": object[];
+        "sortIconHexColor": string;
     }
 }
 declare global {
@@ -35,6 +36,7 @@ declare namespace LocalJSX {
     }
     interface YoobicGrid {
         "data"?: object[];
+        "sortIconHexColor"?: string;
     }
     interface IntrinsicElements {
         "app-root": AppRoot;
