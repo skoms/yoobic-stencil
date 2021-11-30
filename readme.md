@@ -64,10 +64,10 @@ To use CSS Variables you can simply add the CSS Variables in your global styles,
 
 Data ( Optional | Default: [ ] ):
 
-pass in an array of data(objects) to display in the grid:
-**_`data={this.data}`_**
+- pass in an array of data(objects) to display in the grid:
+  **_`data={this.data}`_**
 
 Sort Icon Hex Color ( Optional | Default: 'FFFFFF' ):
 
-pass in a (6)-hex value to represent the color of the headers sort icon:
-**_`sort-icon-hex-color="FFFFFF"`_**
+- pass in a (6)-hex value to represent the color of the headers sort icon:
+  **_`sort-icon-hex-color="FFFFFF"`_**
